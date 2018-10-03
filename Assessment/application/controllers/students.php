@@ -67,8 +67,8 @@ class Students extends CI_Controller{
 		  		'protocol' => 'smtp',
 		  		'smtp_host' => 'ssl://smtp.gmail.com',
 		  		'smtp_port' => 465,
-		  		'smtp_user' => 'rogwang123@gmail.com',
-		  		'smtp_pass' => 'criss12345', 
+		  		'smtp_user' => 'ilabsmak18@gmail.com',
+		  		'smtp_pass' => 'panic911', 
 		  		'mailtype' => 'html',
 		  		'charset' => 'iso-8859-1',
 		  		'wordwrap' => TRUE
@@ -93,9 +93,9 @@ class Students extends CI_Controller{
 						
 			$this->load->library('email');
 			$this->email->initialize($config);
-		    $this->email->from('rogwang123@gmail.com','Ronnie');
+		    $this->email->from('ilabsmak18@gmail.com','ILabs@MakProject');
 		    $this->email->to($email);
-		    $this->email->subject('Signup Verification Email');
+		    $this->email->subject('iLabs Signup Verification Email');
 			$this->email->set_newline("\r\n");
 		    $this->email->message($message);
  
